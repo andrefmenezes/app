@@ -6,19 +6,22 @@ export default StyleSheet.create({
         flex: 1,
         paddingHorizontal:24,
         paddingTop: Constants.statusBarHeight +20,
+        backgroundColor:'#283e4a'
     },
     header:{
+        marginTop:10,
         flexDirection: 'row',
-        justifyContent: 'space-between',
+        //justifyContent: 'space-between',
         alignItems:'center',
     },
     img:{
-        height: 50,
-        width: 50,
+        height: 45,
+        width: 60,
     },
     headerText:{
-        fontSize:15,
-        color: '#737386'
+        marginLeft: 30,
+        fontSize:20,
+        color: '#0ff'
     },
     title:{
         fontSize: 30,
@@ -27,39 +30,60 @@ export default StyleSheet.create({
         color: '#13131a',
         fontWeight: 'bold'
     },
+    txt:{
+        fontSize: 15,
+        color: '#ed7a01',
+    },
     description:{
 fontSize: 16,
 lineHeight:24,
 color:'#737386'
     },
-    incidentList:{
-        marginTop:32,
+   
+    form:{
+        padding: 24,
+        flex: 1,
+        justifyContent: "center"
+        // borderRadius: 8,       
+        // marginBottom: 10,
     },
-    incident:{
-        padding:24,
-        borderRadius: 8,
+    input:{
+    marginTop: 0,
+      height: 40,
+      backgroundColor:'#fff',
+      padding:10,
+      borderWidth: 1,
+      borderRadius:5
+        
+    },
+    inputDesc:{
+        marginTop: 0,
+        height: 60,
         backgroundColor:'#fff',
-        marginBottom: 16,
-    },
-    incidentProperty:{
-        fontSize:14,
-        color:'#41414d',
-        fontWeight:'bold'
-    },
-    incidentValue:{
-        marginTop: 8,
-        fontSize: 15,
-        marginBottom: 24,
-        color:'#737380'
+        padding:10,
+        borderWidth: 1,
+        borderRadius:5
     },
     detailsButton:{
+        marginTop:20,
         flexDirection: 'row',
-        justifyContent:"space-between",
-       alignItems: "center"
+        justifyContent:"center",
+        alignItems: "center"
     },
     detailsButtonText:{
-        color: 'green',
-        fontSize: 15,
-        fontWeight: 'bold'
-    }
+        color: '#ed7a01',
+        fontSize: 20,
+        fontWeight: 'bold',
+        padding:5
+    },
+    spinnerTextStyle: {
+        color: '#ed7a01',
+      },
+     
+      modal: {
+        flex: 1,
+        alignItems: "center",
+        justifyContent: "space-around",
+        backgroundColor: "lightgrey",
+      },
 });
